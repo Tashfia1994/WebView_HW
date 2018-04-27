@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tashfia.webview_hw.MainActivity">
+
+    <EditText
+        android:id="@+id/etxt_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Url"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etxt_url"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Go" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_go"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="63dp"
+        android:layout_toLeftOf="@+id/btn_go"
+        android:layout_toStartOf="@+id/btn_go"
+        android:text="Google" />
+
+    <Button
+        android:id="@+id/btn_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_google"
+        android:layout_alignBottom="@+id/btn_google"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:text="Twitter" />
+
+    <Button
+        android:id="@+id/btn_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_google"
+        android:layout_alignStart="@+id/btn_google"
+        android:layout_below="@+id/btn_google"
+        android:layout_marginTop="104dp"
+        android:text="Facebook" />
+
+    <Button
+        android:id="@+id/btn_gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_twitter"
+        android:layout_alignStart="@+id/btn_twitter"
+        android:layout_alignTop="@+id/btn_fb"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:text="Gmail" />
+</RelativeLayout>
